@@ -13,7 +13,7 @@ for (var  i = 0; i < sortedArray.length; i++) {
 }
 console.log(listaCognomi);
 // scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
-
+document.getElementById('list').innerHTML = "L'attuale lista di cognomi è: " + sortedArray;
 var posizioneUtente = sortedArray.indexOf(cognomeUtente);
 document.getElementById('surname').innerHTML = "Il tuo cognome si trova in questa posizione: " + (posizioneUtente + 1);
 
