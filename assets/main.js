@@ -3,6 +3,7 @@
 var cognomeUtente = prompt('Qual è il tuo cognome?');
 // inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
 var listaCognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
+cognomeUtente = cognomeUtente.charAt(0).toUpperCase() + cognomeUtente.slice(1);
 listaCognomi.push(cognomeUtente)
 // stampa la lista ordinata alfabeticamente
 var sortedArray = listaCognomi.sort();
